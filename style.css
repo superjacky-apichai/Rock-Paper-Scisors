@@ -1,0 +1,55 @@
+@font-face {
+    font-family: "Rock";
+    src: url(/Font/RockerFont.ttf);
+}
+
+html {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    background-color: rgba(73, 60, 60, 0.938);
+    padding: 0;
+    margin: 0;
+}
+
+
+.Head{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(6, 7, 7);
+    padding: 35px;
+    
+    
+}
+
+.gameName{
+    font-family: "Rock";
+    font-size: 75px;
+    color: rgb(238, 3, 3);
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 35px;
+    gap: 10px;
+
+}
+
+.weapon-menu{
+    font-size: 40px;
+    font-size: 75px;
+    color: rgb(206, 204, 204);
+}
+
+.rule-descrip{
+    font-size: 20px;
+    font-size: 30px;
+    color: rgb(206, 204, 204);
+}
+

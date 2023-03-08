@@ -1,3 +1,4 @@
+/*
 alert("Welcom to Rock Paper Scissors game")
 
 alert("Choses Your Choice")
@@ -25,7 +26,7 @@ while (true) {
 
     letPlay(myChoice, ai);
 }
-
+*/
 
 /* // Declare and initialize variables
 const choices = ["rock", "paper", "scissors"];

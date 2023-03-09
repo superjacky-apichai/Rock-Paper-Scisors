@@ -1,11 +1,11 @@
 @font-face {
     font-family: "Rock";
-    src: url(/img/Font/RockerFont.ttf);
+    src: url(img/Font/RockerFont.ttf);
 }
 
 @font-face {
     font-family: "Title";
-    src: url(/img/Font/VarelaRound-Regular.ttf);
+    src: url(img/Font/VarelaRound-Regular.ttf);
 }
 
 html {

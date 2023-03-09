@@ -1,6 +1,11 @@
 @font-face {
     font-family: "Rock";
-    src: url(/Font/RockerFont.ttf);
+    src: url(/img/Font/RockerFont.ttf);
+}
+
+@font-face {
+    font-family: "Title";
+    src: url(/img/Font/VarelaRound-Regular.ttf);
 }
 
 html {
@@ -13,19 +18,24 @@ body {
     background-color: rgba(73, 60, 60, 0.938);
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Title";
+    
 }
 
 
-.Head{
+.Head {
     display: flex;
     justify-content: center;
     background-color: rgb(6, 7, 7);
     padding: 35px;
-    
-    
+
+
 }
 
-.gameName{
+.gameName {
     font-family: "Rock";
     font-size: 75px;
     color: rgb(238, 3, 3);
@@ -41,15 +51,63 @@ body {
 
 }
 
-.weapon-menu{
+.weapon-menu {
     font-size: 40px;
     font-size: 75px;
     color: rgb(206, 204, 204);
 }
 
-.rule-descrip{
+.rule-descrip {
     font-size: 20px;
     font-size: 30px;
     color: rgb(206, 204, 204);
 }
 
+.game-dis {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(206, 204, 204);
+    gap: 250px;
+}
+
+.player-weapon,
+.ai-weapon {
+    font-size: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.player-score,
+.ai-score {
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.weapon-chooster{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-top: 75px;
+}
+
+.rock,.paper,.scissors{
+    width: 150px;
+    height: 150px;
+}
+
+.copy-right{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    color: rgb(206, 204, 204);
+    font-size: 20px;
+}

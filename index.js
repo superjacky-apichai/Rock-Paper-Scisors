@@ -1,11 +1,46 @@
 
-const rock = document.querySelector('.rock')
-const weaponDisplay = document.querySelector('.weapon-display')
-const popupRock = 'Rock';
+/* Creat and choosting character text 
+when you mouse over the image and text of that image pop-up */
+
+const rock = document.querySelector('.rock');
+const weaponDisplay = document.querySelector('.weapon-display');
+
+rock.addEventListener('mouseover', () => {
+  weaponDisplay.textContent = 'Rock';
+  weaponDisplay.classList.add('active');
+});
+
+rock.addEventListener('mouseout', () => {
+  weaponDisplay.classList.remove('active');
+});
 
 
-rock.addEventListener('mouseover',
-() => {weaponDisplay.textContent = popupRock;})
+const paper = document.querySelector('.paper');
+
+
+paper.addEventListener('mouseover', () => {
+  weaponDisplay.textContent = 'Paper';
+  weaponDisplay.classList.add('active');
+});
+
+paper.addEventListener('mouseout', () => {
+  weaponDisplay.classList.remove('active');
+});
+
+const scissors = document.querySelector('.scissors');
+
+
+scissors.addEventListener('mouseover', () => {
+  weaponDisplay.textContent = 'Scissors';
+  weaponDisplay.classList.add('active');
+});
+
+scissors.addEventListener('mouseout', () => {
+  weaponDisplay.classList.remove('active');
+});
+
+/* pop-up text end here */
+
 
 
 

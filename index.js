@@ -1,3 +1,23 @@
+
+const rock = document.querySelector('.rock')
+const weaponDisplay = document.querySelector('.weapon-display')
+const popupRock = 'Rock';
+
+
+rock.addEventListener('mouseover',
+() => {weaponDisplay.textContent = popupRock;})
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 alert("Welcom to Rock Paper Scissors game")
 

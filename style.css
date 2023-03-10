@@ -99,6 +99,28 @@ body {
 .rock,.paper,.scissors{
     width: 150px;
     height: 150px;
+    transition: all 0.3s ease-in-out;
+}
+
+.rock:hover,.paper:hover,.scissors:hover{
+    filter : grayscale(50%);
+    transform: scale(1.2);
+}
+
+.weapon-display{
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+    font-family: "Title";
+    font-size: 35px;
+    color: rgb(206, 204, 204);
+    
+    
+}
+
+.rock:hover + .weapon-display{
+    visibility: visible;
+    
 }
 
 .copy-right{
@@ -111,3 +133,15 @@ body {
     color: rgb(206, 204, 204);
     font-size: 20px;
 }
+
+
+.fa-github {
+    color: var(--primary-light);
+    font-size: 24px;
+    transition: transform 0.3s ease-in-out;
+    color: black;
+  }
+  
+  .fa-github:hover {
+    transform: rotate(360deg) scale(1.2);
+  }

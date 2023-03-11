@@ -11,7 +11,7 @@ rock.addEventListener('mouseover', () => {
 });
 
 rock.addEventListener('mouseout', () => {
-  weaponDisplay.classList.remove('active');
+  weaponDisplay.textContent = 'Choose your weapons';
 });
 
 
@@ -24,7 +24,7 @@ paper.addEventListener('mouseover', () => {
 });
 
 paper.addEventListener('mouseout', () => {
-  weaponDisplay.classList.remove('active');
+  weaponDisplay.textContent = 'Choose your weapons';
 });
 
 const scissors = document.querySelector('.scissors');
@@ -36,7 +36,7 @@ scissors.addEventListener('mouseover', () => {
 });
 
 scissors.addEventListener('mouseout', () => {
-  weaponDisplay.classList.remove('active');
+  weaponDisplay.textContent = 'Choose your weapons';
 });
 
 /* pop-up text end here */

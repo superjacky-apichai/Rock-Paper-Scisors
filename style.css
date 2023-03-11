@@ -113,7 +113,12 @@ body {
 }
 
 .weapon-display {
-  display: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+    font-family: "Title";
+    font-size: 35px;
+    color: rgb(206, 204, 204);
     
 
 }

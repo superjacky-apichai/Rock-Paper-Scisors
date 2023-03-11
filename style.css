@@ -70,14 +70,38 @@ body {
     justify-content: center;
     color: rgb(206, 204, 204);
     gap: 250px;
+   
 }
-
+ .player-dis,.ai-dis{
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;    
+    margin-top: 25px;
+ }
 .player-weapon,
 .ai-weapon {
-    font-size: 150px;
+    width: 75px;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    
+}
+
+.player-weapon.activePlayerRock{
+    width: 114px;
+    height: auto;
+    
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+   
+   
+   
 }
 
 .player-score,
@@ -89,12 +113,16 @@ body {
 
 }
 
+
+
 .weapon-chooster {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 100px;
     margin-top: 75px;
+  
+    
 }
 
 .rock,
@@ -103,6 +131,7 @@ body {
     width: 150px;
     height: 150px;
     transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 
 .rock:hover,
@@ -115,7 +144,7 @@ body {
 .weapon-display {
     display: flex;
     justify-content: center;
-    margin-top: 75px;
+    margin-top: 55px;
     font-family: "Title";
     font-size: 35px;
     color: rgb(206, 204, 204);
@@ -126,7 +155,7 @@ body {
 .weapon-display.active {
     display: flex;
     justify-content: center;
-    margin-top: 75px;
+    margin-top: 55px;
     font-family: "Title";
     font-size: 35px;
     color: rgb(206, 204, 204);
@@ -134,10 +163,6 @@ body {
 }
 
 
-.rock:hover+.weapon-display {
-    visibility: visible;
-
-}
 
 .copy-right {
     position: fixed;
@@ -161,3 +186,8 @@ body {
 .fa-github:hover {
     transform: rotate(360deg) scale(1.2);
 }
+
+
+
+
+

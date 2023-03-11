@@ -41,6 +41,32 @@ scissors.addEventListener('mouseout', () => {
 
 /* pop-up text end here */
 
+/* add click event */
+
+
+const playerWeapon = document.querySelector('.player-weapon');
+
+rock.addEventListener('click', () => {
+  playerWeapon.src = 'img/weapon/Rock.png';
+  playerWeapon.classList.add('activePlayerRock');
+});
+
+paper.addEventListener('click', () => {
+  playerWeapon.src = 'img/weapon/Paper.png';
+  playerWeapon.classList.add('activePlayerRock');
+});
+
+scissors.addEventListener('click', () => {
+  playerWeapon.src = 'img/weapon/Scissors.png';
+  playerWeapon.classList.add('activePlayerRock');
+});
+
+
+
+
+
+
+
 
 
 

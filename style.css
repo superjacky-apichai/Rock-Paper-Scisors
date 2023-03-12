@@ -94,14 +94,10 @@ body {
 .player-weapon.activePlayerRock{
     width: 114px;
     height: auto;
-    
     align-items: center;
     justify-content: center;
     padding: 0;
-    margin: 0;
-   
-   
-   
+    margin: 0;  
 }
 
 .player-score,
@@ -186,6 +182,9 @@ body {
 .fa-github:hover {
     transform: rotate(360deg) scale(1.2);
 }
+
+
+
 
 
 

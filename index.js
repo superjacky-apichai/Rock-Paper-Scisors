@@ -47,56 +47,85 @@ function calculateScore(myChoice, ai) {
 
   if ((myChoice === 1 && ai === 3)
     || (myChoice === 2 && ai === 1)
-    || myChoice === 3 && ai === 2) {
-    return true;
+    || (myChoice === 3 && ai === 2)) {
+
+    playerScore++;
+    alert('Player WIN'+`${playerScore}`);
   } else if (myChoice === ai) {
-    return undefined;
+    alert('Tie')
+  } else {
+    aiScore++;
+    alert('AI WIN'+`${aiScore}`)
+
+  }
+    
+  if(playerScore === 5){
+    alert('Player WIN')
+
+    setTimeout(() => {
+      location.reload();
+    });
+  }else if (aiScore === 5){
+    alert('AI WIN')
+
+    setTimeout(() => {
+      location.reload();
+    });
   }
 
-  return false;
 }
 
 
 /* game mechanic fucntion end here*/
 
-/* create Plater and AI weapon*/
+/* create Plater and AI weapon */
 
 let player = 0;
-let computerAI = 0;
+
+function computerAI(min, max) { // min and max included 
+  return Math.floor(Math.random() * (max - min + 1) + min)
+}
+
+let playerScore = 0;
+let aiScore = 0;
 
 /* create Plater and AI weapon end here*/
 
 
 
 // /* add click event */
+function clickEvent() {
+  rock.addEventListener('click', () => {
+    player = 1;
+    calculateScore(player, computerAI(1,3))
+  });
 
-rock.addEventListener('click', () => {
-  player = 1;
-  
-});
+  paper.addEventListener('click', () => {
+    player = 2
+    calculateScore(player, computerAI(1,3))
 
-paper.addEventListener('click', () => {
-  player = 2
-  
-});
+  });
 
-scissors.addEventListener('click', () => {
-  player = 3;
-  
-});
+  scissors.addEventListener('click', () => {
+    player = 3;
 
+    calculateScore(player, computerAI(1,3))
+
+  });
+
+
+
+}
 /* Player click event end here */
 
+/* changin content */
+
+/* changin content end here*/
+
+
 /* game run here*/
-let playerScore = 0;
-let aiScore = 0;
-// while (playerScore < 5 || aiScore < 5) {
 
-
-
-
-// }
-
+clickEvent();
 
 /* game end here*/
 
@@ -115,7 +144,7 @@ let aiScore = 0;
 
 /* Add computer-ai interact */
 
-// let randomNumber = Math.floor(Math.random() * 3);
+
 // computerAI = weaponArray[randomNumber];
 
 

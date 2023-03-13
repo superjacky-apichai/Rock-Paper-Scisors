@@ -65,11 +65,13 @@ body {
 }
 
 .game-dis {
+   
     display: flex;
+    
     align-items: center;
     justify-content: center;
     color: rgb(206, 204, 204);
-    gap: 250px;
+    gap: 400px;
    
 }
  .player-dis,.ai-dis{
@@ -81,17 +83,32 @@ body {
     gap: 30px;    
     margin-top: 25px;
  }
+
+ .score-discrip{
+    position: absolute;
+    
+    
+    font-size: 30px;
+    color: rgb(206, 204, 204);
+    margin: 0;
+    padding: 0;
+
+ }
+
+
+
 .player-weapon,
 .ai-weapon {
+    
     width: 75px;
     height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     
+    
 }
-
-.player-weapon.activePlayerRock{
+.player-weapon.activeimg, .ai-weapon.activeimg {
     width: 114px;
     height: auto;
     align-items: center;
